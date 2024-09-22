@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/CSS/css-reset.css" />
+    <link rel="stylesheet" href="styles/CSS/style.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/bg-desktop.png" alt="bg" class="desktop-background" />
+    <main class="container">
+      <section class="button-container">
+        <img src="images/logo.svg" alt="logo" class="button-container__logo" />
+        <div class="icon-container">
+          <div class="icon-container__container">
+            <img src="images/icon-document.svg" alt="document" class="icon-container__icon" />
+          </div>
+          <div class="icon-container__container">
+            <img src="images/icon-folder.svg" alt="folder" class="icon-container__icon" />
+          </div>
+          <div class="icon-container__container">
+            <img src="images/icon-upload.svg" alt="upload" class="icon-container__icon" />
+          </div>
+        </div>
+      </section>
+      <section class="input-container">
+        <p class="input-container__text">You’ve used <span class="input-container__text_weight_bold">815 GB</span> of your storage</p>
+        <input class="input-container__input-range" type="range" id="storage" name="storage" min="0" max="1000" value="815" step="5" />
+        <div class="input-container__range-text"><span class="input-container__min">0 GB</span><span class="input-container__max">1000 GB</span></div>
+        <div class="input-container__remain-storage">
+          <span class="input-container__remain-number">185</span>
+          <span class="input-container__remain-text">GB Left</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/gilangr1440/">Gilang Ramadhan</a>.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
